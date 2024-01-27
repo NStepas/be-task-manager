@@ -1,20 +1,34 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# System description
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+Updated: 2022-12-02
+Author: Nadiia S. <ur email here!!!!>
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+## System purpose and usage
+An api which created for handle task manager app
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+## Tech stack
+- Language: Javascript (written in Typescript)
+- Platform: NodeJS 16+
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+## Diagram or drawing
+- N/A
+
+# Development
+
+## Source code location in GitHub
+PUT HERE YOUR GIT HUB
+
+## Development Environment
+npm install
+
+# Testing
+
+## Manually in pair with project which uses this package
+
+1. Create the development env file
+2. Feel the development env file (use example env)
+3. Create db schema and connect it via development.env
+4. Run your application
+       npm run start
+    
+5. Done.

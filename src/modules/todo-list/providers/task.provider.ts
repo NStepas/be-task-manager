@@ -46,7 +46,7 @@ export class TaskProvider {
 
     async getUserTaskForASpecificDate(accessToken: string, userId: string, date: string): Promise<TaskDto[] | Task[]> {
         this.appLogger.log(`Trying to get user tasks for a specific date`, this.TAG);
-        const task = await this.taskService.getUserTaskForASpecificDate(userId, date.split('-').reverse().join('.'));
+        const task = await this.taskService.getUserTaskForASpecificDate(userId, date);
         return TaskTransformer.tasksToInterface(task);
     }
 

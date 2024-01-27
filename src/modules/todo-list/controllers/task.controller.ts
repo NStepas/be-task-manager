@@ -35,7 +35,7 @@ export class TaskController {
     }
 
     @Post(`create-task/:${PARAMS.USER_ID}`)
-    // @UseGuards(JwtAuthGuard)
+    @UseGuards(JwtAuthGuard)
     @ApiOperation({description: 'Create task'})
     @HttpCode(HttpStatus.CREATED)
     @ApiResponse({
@@ -57,7 +57,7 @@ export class TaskController {
     }
 
     @Get(`user-tasks/:${PARAMS.USER_ID}`)
-    // @UseGuards(JwtAuthGuard)
+    @UseGuards(JwtAuthGuard)
     @ApiOperation({description: 'Get task'})
     @HttpCode(HttpStatus.OK)
     @ApiResponse({
@@ -77,7 +77,7 @@ export class TaskController {
     }
 
     @Get(`user-important-tasks/:${PARAMS.USER_ID}`)
-    // @UseGuards(JwtAuthGuard)
+    @UseGuards(JwtAuthGuard)
     @ApiOperation({description: 'Get important task'})
     @HttpCode(HttpStatus.OK)
     @ApiResponse({
@@ -97,7 +97,7 @@ export class TaskController {
     }
 
     @Get(`user-today-tasks/:${PARAMS.USER_ID}`)
-    // @UseGuards(JwtAuthGuard)
+    @UseGuards(JwtAuthGuard)
     @ApiOperation({description: 'Get today task'})
     @HttpCode(HttpStatus.OK)
     @ApiResponse({
@@ -117,7 +117,7 @@ export class TaskController {
     }
 
     @Get(`user-tasks-for-a-specific-date/:${PARAMS.USER_ID}/:${PARAMS.DATE}`)
-    // @UseGuards(JwtAuthGuard)
+    @UseGuards(JwtAuthGuard)
     @ApiOperation({description: 'Get tasks for a specific date'})
     @HttpCode(HttpStatus.OK)
     @ApiResponse({
@@ -138,7 +138,7 @@ export class TaskController {
     }
 
     @Delete(`delete-task/:${PARAMS.TASK_ID}`)
-    // @UseGuards(JwtAuthGuard)
+    @UseGuards(JwtAuthGuard)
     @ApiOperation({description: 'Delete task'})
     @HttpCode(HttpStatus.OK)
     @ApiResponse({
@@ -158,7 +158,7 @@ export class TaskController {
     }
 
     @Put(`update-task/:${PARAMS.USER_ID}/:${PARAMS.TASK_ID}`)
-    // @UseGuards(JwtAuthGuard)
+    @UseGuards(JwtAuthGuard)
     @ApiOperation({description: 'Update task'})
     @HttpCode(HttpStatus.CREATED)
     @ApiResponse({
@@ -180,7 +180,7 @@ export class TaskController {
     }
 
     @Get(`get-task/:${PARAMS.USER_ID}/:${PARAMS.TASK_ID}`)
-    // @UseGuards(JwtAuthGuard)
+    @UseGuards(JwtAuthGuard)
     @ApiOperation({description: 'Get task by id'})
     @HttpCode(HttpStatus.OK)
     @ApiResponse({
